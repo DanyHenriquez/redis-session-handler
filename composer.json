@@ -1,0 +1,20 @@
+{
+  "name": "Prezto/RedisSessionHandler",
+  "type": "library",
+  "description": "A pure Php Redis session handler",
+  "keywords": ["redis", "Session"],
+  "homepage": "https://github.com/Prezto/RedisSessionHandler",
+  "license": "Apache",
+  "authors": [
+    {
+      "name": "Dany Henriquez",
+      "email": "dany.henriquez@outlook.comm"
+    }
+  ],
+  "require": {
+    "php": ">=5.5.0"
+  },
+  "autoload": {
+    "psr-4": { "Prezto": "src/" }
+  }
+}
