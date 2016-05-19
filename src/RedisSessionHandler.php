@@ -36,7 +36,7 @@ class RedisSessionHandler implements \SessionHandlerInterface
      * @param string $port
      * @param null $pass
      */
-    private function __construct($host = 'localhost', $port = '6379', $pass = null)
+    private function __construct($host, $port, $pass)
     {
         $this->host = $host;
         $this->port = $port;
@@ -48,12 +48,12 @@ class RedisSessionHandler implements \SessionHandlerInterface
     /**
      * @return RedisHandler|null
      */
-    public static function init()
+    public static function init($host = 'localhost', $port = '6379', $pass = null)
     {
         if (self::$_instance !== null)
             return self::$_instance;
 
-        return self::$_instance = new self($host = 'localhost', $port = '6379', $pass = null);
+        return self::$_instance = new self($host, $port, $pass);
     }
 
     /**
