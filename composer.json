@@ -12,7 +12,8 @@
     }
   ],
   "require": {
-    "php": ">=5.5.0"
+    "php": ">=5.5.0",
+    "ptrofimov/tinyredisclient": "^1.1"
   },
   "autoload": {
     "psr-4": { "Prezto\\": "src/" }
