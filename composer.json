@@ -1,5 +1,5 @@
 {
-  "name": "Prezto/RedisSessionHandler",
+  "name": "prezto/redis-session-handler",
   "type": "library",
   "description": "A pure Php Redis session handler",
   "keywords": ["redis", "Session"],
